@@ -10,3 +10,5 @@ Trenutno so v načrtu 3:
 - *Naključni kviz*
 
 Vizija je narediti glavni meni, v katerem lahko dostopaš do vseh \"99 iger\". Po igranju vsake igre pa se seveda lahko vrneš nazaj v glavni meni.
+
+TUKAJ MANJKA ŠE OPIS KAKO ZAGNATI PROGRAM!
