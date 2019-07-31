@@ -1,6 +1,9 @@
+import random
+import copy
+
 #Vprašanja bodo našteta v obliki v obliki: 'vprašanje':[možnosti]
 #Kaj je '___'?
-vprasanja = {
+vprasanja_za_kviz = {
     'Ama':['Japonska nabiralka biserov', 'Ena izmed Bondovih deklet', 'Otok v Pacifiku', 'Tibetansko govedo'],
     'paradižnik':['Sadje', 'Zelenjava', 'Meso', 'Goba'],
     'Mars':['Planet in rimski bog vojne', 'Samo planet', 'Planet in grški bog vojne', 'Planet in etruščanski bog'],
@@ -12,3 +15,21 @@ vprasanja = {
     'bil vzdevek nemškega generalfeldmaršala Erwina Rommla':['Puščavska lisica', 'Afriški lev', 'Puščavski tiger', 'Nemški panter'],
     'Tar':['Azijska divja koza', 'Tibetansko govedo', 'Afriška volovska antilopa', 'Pritlikav indonezijski konj']
 }
+
+# da se ne bodo vprasanja_za_kviz kaj pokvarila
+vprasanja = copy.deepcopy(vprasanja_za_kviz)
+
+#Ustvarimo funkcijo za mešanje, da ne bo kviz ves čas enak.
+
+def premesaj(v):
+    '''Funkcija premeša elemente.'''
+    premesani_kljuci = []
+    i = 0
+    while i < len(v):
+        trenutno_izbran = random.choice(v.keys())
+        if trenutno_izbran not in premesani_kljuci:
+            premesani_kljuci.append(trenutno_izbran)
+            i += 1
+    return premesani_kljuci
+
+# naprej bo pa treba ustvarit z bottle
