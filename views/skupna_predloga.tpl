@@ -5,6 +5,10 @@
     <body>
         {{!base}}
         <hr />
+            <form action="/meni/">
+                <input type="submit" value="Nazaj na meni">
+            </form>
+        <hr />
         <footer>© 2019, Urban Merhar</footer>
     </body>
 </html>

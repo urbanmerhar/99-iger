@@ -7,6 +7,3 @@ Kdo si?
     <input type="submit" value="Potrdi">
 </form>
 
-<form action="/meni/">
-    <input type="submit" value="Nazaj na meni">
-</form>
