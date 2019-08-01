@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <title>99 iger</title>
+    </head>
     <body>
         {{!base}}
         <hr />
