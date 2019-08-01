@@ -4,6 +4,7 @@
     </head>
     <body>
         {{!base}}
+        <br />
         <hr />
             <form action="/meni/">
                 <input type="submit" value="Nazaj na meni">

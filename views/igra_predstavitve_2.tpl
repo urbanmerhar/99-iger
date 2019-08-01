@@ -1,7 +1,8 @@
 % rebase('skupna_predloga.tpl')
 <h1>Igra predstavitve</h1>
 <hr />
-Ali si res {{ime}}?
+<em>Ali si res {{ime}}?</em>
+<br />
 
 <form action="/Igra_predstavitve_konec/" method="POST">
     <ul>
