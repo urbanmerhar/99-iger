@@ -2,20 +2,30 @@ import bottle
 # MENI
 
 @bottle.get('/meni/')
-def pozdravi():
+def glavni_meni():
     return bottle.template('meni.tpl')
 
 # IGRA PREDSTAVITVE
 @bottle.get('/Igra_predstavitve/')
 def predstavi_se():
-    return bottle.template('igra_predstavitve.tpl')
+    return bottle.template('igra_predstavitve')
 
-#UGANI ŠTEVILO
+@bottle.post('/Igra_predstavitve/')
+def predstavi_se_resnica():
+    ime = bottle.request.forms.getunicode('ime_igralca')
+    return bottle.template('igra_predstavitve_2.tpl', ime=ime)
+
+@bottle.post('/Igra_predstavitve_konec/')
+def predstavi_se_zmaga():
+    resnica = bottle.request.forms.getunicode('odgovor')
+    return bottle.template('igra_predstavitve_3.tpl')
+
+# UGANI ŠTEVILO
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
     return bottle.template('ugani_stevilo.tpl')
 
-#NAKLJUČNI KVIZ
+# NAKLJUČNI KVIZ
 @bottle.get('/Nakljucni_kviz/')
 def kviz():
     return bottle.template('nakljucni_kviz.tpl')
