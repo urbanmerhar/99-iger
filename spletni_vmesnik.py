@@ -13,11 +13,11 @@ def predstavi_se():
 #UGANI ŠTEVILO
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
-    return bottle.template('igra_predstavitve.tpl')
+    return bottle.template('ugani_stevilo.tpl')
 
 #NAKLJUČNI KVIZ
 @bottle.get('/Nakljucni_kviz/')
 def kviz():
-    return bottle.template('igra_predstavitve.tpl')
+    return bottle.template('nakljucni_kviz.tpl')
 
 bottle.run(debug=True, reloader=True)
