@@ -5,7 +5,6 @@
 
 <form action="/Igra_predstavitve/" method="POST">
     Ime: <input type="text" name="ime_igralca">
-    <br />
     <input type="submit" value="Potrdi">
 </form>
 
