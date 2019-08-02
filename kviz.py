@@ -31,5 +31,3 @@ def premesaj(v):
             premesani_kljuci.append(trenutno_izbran)
             i += 1
     return premesani_kljuci
-
-# naprej bo pa treba ustvarit z bottle
