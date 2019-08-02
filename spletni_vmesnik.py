@@ -25,6 +25,13 @@ def predstavi_se_zmaga():
 def ugani_stevilo():
     return bottle.template('ugani_stevilo.tpl')
 
+@bottle.post('/Ugani_stevilo/')
+def interval_ugibanja():
+    a = int(bottle.request.forms.getunicode('a'))
+    b = int(bottle.request.forms.getunicode('b'))
+    return 'Ugibal boš na intervalu od {} do {}'.format(a, b)
+
+
 # NAKLJUČNI KVIZ
 @bottle.get('/Nakljucni_kviz/')
 def kviz():
