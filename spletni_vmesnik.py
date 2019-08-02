@@ -21,6 +21,8 @@ def predstavi_se_zmaga():
     return bottle.template('igra_predstavitve_3.tpl')
 
 # UGANI ŠTEVILO
+from igra_ugani_stevilo import Interval, Stevilo
+
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
     return bottle.template('ugani_stevilo.tpl')
