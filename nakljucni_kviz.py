@@ -22,12 +22,13 @@ vprasanja = copy.deepcopy(vprasanja_za_kviz)
 
 #Ustvarimo funkcijo za mešanje, da ne bo kviz ves čas enak.
 
+
 def premesaj(v):
     '''Funkcija premeša elemente.'''
     premesani_kljuci = []
     i = 0
     while i < len(v):
-        trenutno_izbran = random.choice(v.keys())
+        trenutno_izbran = random.choice(list(v.keys()))
         if trenutno_izbran not in premesani_kljuci:
             premesani_kljuci.append(trenutno_izbran)
             i += 1
