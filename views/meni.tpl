@@ -1,6 +1,7 @@
 % rebase('skupna_predloga.tpl')
 <h1>99 iger</h1>
 <hr />
+TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
 
 <ul>
     <li>
