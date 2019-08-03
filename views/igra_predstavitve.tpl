@@ -1,7 +1,7 @@
 % rebase('skupna_predloga.tpl')
 <h1>Igra predstavitve</h1>
 <hr />
-Navodila....
+Igra predstavitve je igra kjer te vprašam kdo si. Vse kar moraš narediti je to da zapišeš svoje ime in ga nato potrdiš.
 <hr />
 <em>Kdo si?</em>
 

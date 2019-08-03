@@ -22,9 +22,11 @@ def predstavi_se_resnica():
 
 @bottle.post('/Igra_predstavitve_konec/')
 def predstavi_se_zmaga():
-    # resnica = bottle.request.forms.getunicode('odgovor')
-    # če jo bom slučajno potreboval (DA, NE, MOGOČE)
-    return bottle.template('igra_predstavitve_3.tpl')
+    resnica = bottle.request.forms.getunicode('odgovor')
+    if resnica in ['Da', 'Ne', 'Mogoče']:
+        return bottle.template('igra_predstavitve_3.tpl')
+    else:
+        return 'Vsaj izpolni vprašanje...'
 
 #UGANI ŠTEVILO
 from igra_ugani_stevilo import Interval, Stevilo
