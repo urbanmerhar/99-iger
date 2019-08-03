@@ -4,8 +4,10 @@
 
 Pravilno si odgovoril {{pravilno}} od {{vse_mozne_tocke}} vprašanj.
 <br />
-NAGRADA
+% if pravilno >= 8:
+NAGRADA:
 <br />
     % from nagrade import seznam_nagrad, vrni_nagrado
-        {{vrni_nagrado(seznam_nagrad)}}
+            {{vrni_nagrado(seznam_nagrad)}}
     % end
+
