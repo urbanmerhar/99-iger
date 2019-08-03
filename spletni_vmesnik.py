@@ -31,43 +31,21 @@ def ugani_stevilo():
 def interval_ugibanja():
     a = int(bottle.request.forms.getunicode('a'))
     b = int(bottle.request.forms.getunicode('b'))
-    return 'Ugibal boš na intervalu od {} do {}.'.format(a, b)
+    return bottle.template('ugibaj_stevilo.tpl', a=a, b=b)
+
+@bottle.post('/Ugibaj_stevilo/')
+def ugibaj_stevilo():
+    stevilo_ki_ga_odda_igralec = int(bottle.request.forms.getunicode('trenutno_stevilo'))
+    return 'Ugibal si število {}.'.format(stevilo_ki_ga_odda_igralec)
+
+@bottle.get('/Uganil_si_pravo_stevilo/')
+def uganil_si_pravo_stevilo():
+    return bottle.template('uganil_si_pravo_stevilo.tpl')
 
 
 # NAKLJUČNI KVIZ
 import random
-import copy
-
-#Vprašanja bodo našteta v obliki v obliki: 'vprašanje':[možnosti]
-#Kaj je '___'?
-vprasanja_za_kviz = {
-    'Ama':['Japonska nabiralka biserov', 'Ena izmed Bondovih deklet', 'Otok v Pacifiku', 'Tibetansko govedo'],
-    'paradižnik':['Sadje', 'Zelenjava', 'Meso', 'Goba'],
-    'Mars':['Planet in rimski bog vojne', 'Samo planet', 'Planet in grški bog vojne', 'Planet in etruščanski bog'],
-    'Jamb':['Vrsta ritma in igra', 'Vrsta ritma', 'Igra', 'Igra in pripovedno delo'],
-    'State of Washington':['Zvezna država v ZDA', 'Glavno mesto ZDA', 'Nekdanji predsednik ZDA', 'Samostojna država'],
-    'Jak':['Tibetansko govedo', 'Vrsta bizona', 'Afriška volovska antilopa', 'Azijska divja koza'],
-    'Fobos':['Marsov naravni satelit', 'Jupitrov naravni satelit', 'Venerin naravni satelit', 'Zemljin naravni satelit' ],
-    'Cerera':['Rimska boginja ljubezni in pritlikavi planet', 'Samo rimska boginja ljubezni', 'Egipčanska boginja neba', 'Grška boginja zdravilstva'],
-    'bil vzdevek nemškega generalfeldmaršala Erwina Rommla':['Puščavska lisica', 'Afriški lev', 'Puščavski tiger', 'Nemški panter'],
-    'Tar':['Azijska divja koza', 'Tibetansko govedo', 'Afriška volovska antilopa', 'Pritlikav indonezijski konj']
-}
-
-# da se ne bodo vprasanja_za_kviz kaj pokvarila
-vprasanja = copy.deepcopy(vprasanja_za_kviz)
-
-#Ustvarimo funkcijo za mešanje, da ne bo kviz ves čas enak.
-
-def premesaj(v):
-    '''Funkcija premeša elemente.'''
-    premesani_kljuci = []
-    i = 0
-    while i < len(v):
-        trenutno_izbran = random.choice(list(v.keys()))
-        if trenutno_izbran not in premesani_kljuci:
-            premesani_kljuci.append(trenutno_izbran)
-            i += 1
-    return premesani_kljuci
+from nakljucni_kviz import vprasanja_za_kviz, vprasanja, premesaj
 
 @bottle.get('/Nakljucni_kviz/')
 def kviz():
@@ -79,13 +57,18 @@ def kviz():
 @bottle.post('/Kviz_resitev/')
 def kviz_resitev():
     pravilno = 0
-    vsi = 0
+    vse_mozne_tocke = 0
     for i in vprasanja.keys():
         odgovori = bottle.request.forms.getunicode(i)
-        vsi += 1
+        vse_mozne_tocke += 1
         if vprasanja_za_kviz[i][0] == odgovori:
             pravilno += 1
-    return 'Pravilno je {} od {}'.format(pravilno, vsi)
+    return bottle.template('nakljucni_kviz_rezultat', pravilno=pravilno, vse_mozne_tocke=vse_mozne_tocke)
+
+# MISLIM DA ŠUMNIKI PRI DVEH ODGOVORIH NAGAJATA,
+# paradiŽnik in generalmarŠal ne delata
+# torej vprasanja_za_kviz[i][0] mogoče ni v unicode
+# MOGOČE JE KRIV DEEPCOPY
 
 
 #ZAGON BOTTLA
