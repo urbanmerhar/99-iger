@@ -17,7 +17,7 @@ Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.
         % end
 
 
-% if pravilno >= 8 and pravilno != 10:
+% if pravilno == 8 or pravilno == 9:
 NAGRADA:
 <br />
     % from nagrade import seznam_sal, vrni_nagrado
