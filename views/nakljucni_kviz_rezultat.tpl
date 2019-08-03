@@ -4,4 +4,8 @@
 
 Pravilno si odgovoril {{pravilno}} od {{vse_mozne_tocke}} vprašanj.
 <br />
-NAGRADA??
+NAGRADA
+<br />
+    % from nagrade import seznam_nagrad, vrni_nagrado
+        {{vrni_nagrado(seznam_nagrad)}}
+    % end
