@@ -2,7 +2,7 @@ import random
 import copy
 
 #Vprašanja bodo našteta v obliki v obliki: 'vprašanje':[možnosti]
-#Pod prvo možnostjo je naveden pravi odgovor!
+#Pod prvo možnostjo je naveden pravilni odgovor!
 #Kaj je '___'?
 vprasanja_za_kviz = {
     'Ama':['Japonska nabiralka biserov', 'Ena izmed Bondovih deklet', 'Otok v Pacifiku', 'Tibetansko govedo'],
@@ -21,7 +21,6 @@ vprasanja_za_kviz = {
 vprasanja = copy.deepcopy(vprasanja_za_kviz)
 
 #Ustvarimo funkcijo za mešanje, da ne bo kviz ves čas enak.
-
 
 def premesaj(v):
     '''Funkcija premeša elemente.'''
