@@ -1,5 +1,5 @@
 % rebase('skupna_predloga.tpl')
-<h1>99 IGER</h1>
+<h1>99 IGER mogoče bi to prikazal kar s sliko.</h1>
 <hr />
 TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
 
