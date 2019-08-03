@@ -9,9 +9,11 @@ Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.
 
         NAGRADA:
         <br />
-        % from nagrade import seznam_sal, vrni_nagrado
+        % from nagrade import seznam_sal, seznam_zanimivost, vrni_nagrado
+                Šala:
                 {{vrni_nagrado(seznam_sal)}}
-
+                in zanimivost:
+                {{vrni_nagrado(seznam_zanimivosti)}}
         % end
 
 
