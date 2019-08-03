@@ -1,7 +1,15 @@
 % rebase('skupna_predloga.tpl')
 <h1>Ugani število</h1>
 <hr />
-Navodila...
+Preprosta igra ugibanja števil. Postavila pa bova par pravil:
+<ul>
+    <li>
+        Vedno iščeva celoštevilo.
+    </li>
+    <li>
+        V oknca spodaj najprej vneseš spodnjo mejo in nato zgornjo mejo ugibanja.
+    </li>
+</ul>
 <hr />
 
 Izberi interval na katerem boš iskal naključno število.
