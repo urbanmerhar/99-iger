@@ -10,7 +10,7 @@ class Interval:
         self.zgornja_meja = zgornja
 
 class Stevilo:
-    def __init__(self, trenutno_stevilo, kolikokrat_smo_ze_ugibali):
+    def __init__(self):
         self.trenutno_stevilo = None
         self.kolikokrat_smo_ze_ugibali = 0
 
