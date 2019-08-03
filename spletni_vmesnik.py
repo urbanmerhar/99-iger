@@ -73,8 +73,8 @@ def kviz_resitev():
 
 # MISLIM DA ŠUMNIKI PRI DVEH ODGOVORIH NAGAJATA,
 # paradiŽnik in nemŠki generalmarŠal ne delata
-# vprasanja_za_kviz[i][0] so utf-8
-# sepravi težava je v if stavku: utf-8 != unicode(odgovori)
+# program moti to, da je v ključu key() šumnik
+# NAPAKA JE POTEM MOGOČE PRI getunicode(i)
 
 
 #ZAGON BOTTLA
