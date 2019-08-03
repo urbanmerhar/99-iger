@@ -1,7 +1,8 @@
 % rebase('skupna_predloga.tpl')
 <h1>Naključni kviz</h1>
 <hr />
-Navodila...
+Navodila so preprosta. Odgovori na dana vprašanja, tako da označiš svoj izbrani odgovor, če ne označiš ničesar se to šteje kot napačen odgovor. Vsak odgovor je vreden eno točko.
+Če dobiš vsaj 8 točk dobiš nagrado.
 <hr />
 
 <form action='/Kviz_resitev/' method='POST'>
