@@ -1,6 +1,9 @@
 % rebase('skupna_predloga.tpl')
 <h1>Ugani število</h1>
 <hr />
+Navodila...
+<hr />
+
 Izberi interval na katerem boš iskal naključno število.
 <form action="/Ugani_stevilo/" method="POST">
     Od: <input type="text" name="a">

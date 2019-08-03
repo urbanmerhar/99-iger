@@ -1,6 +1,8 @@
 % rebase('skupna_predloga.tpl')
 <h1>Naključni kviz</h1>
 <hr />
+Navodila...
+<hr />
 
 <form action='/Kviz_resitev/' method='POST'>
     <ol>
