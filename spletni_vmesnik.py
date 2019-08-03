@@ -1,11 +1,11 @@
 import bottle
-# MENI
 
+#MENI
 @bottle.get('/meni/')
 def glavni_meni():
     return bottle.template('meni.tpl')
 
-# IGRA PREDSTAVITVE
+#IGRA PREDSTAVITVE
 @bottle.get('/Igra_predstavitve/')
 def predstavi_se():
     return bottle.template('igra_predstavitve')
@@ -20,7 +20,7 @@ def predstavi_se_zmaga():
     resnica = bottle.request.forms.getunicode('odgovor')
     return bottle.template('igra_predstavitve_3.tpl')
 
-# UGANI ŠTEVILO
+#UGANI ŠTEVILO
 from igra_ugani_stevilo import Interval, Stevilo
 
 @bottle.get('/Ugani_stevilo/')
@@ -43,7 +43,7 @@ def uganil_si_pravo_stevilo():
     return bottle.template('uganil_si_pravo_stevilo.tpl')
 
 
-# NAKLJUČNI KVIZ
+#NAKLJUČNI KVIZ
 import random
 from nakljucni_kviz import vprasanja_za_kviz, vprasanja, premesaj
 
@@ -66,9 +66,8 @@ def kviz_resitev():
     return bottle.template('nakljucni_kviz_rezultat', pravilno=pravilno, vse_mozne_tocke=vse_mozne_tocke)
 
 # MISLIM DA ŠUMNIKI PRI DVEH ODGOVORIH NAGAJATA,
-# paradiŽnik in generalmarŠal ne delata
+# paradiŽnik in nemŠki generalmarŠal ne delata
 # torej vprasanja_za_kviz[i][0] mogoče ni v unicode
-# MOGOČE JE KRIV DEEPCOPY
 
 
 #ZAGON BOTTLA
