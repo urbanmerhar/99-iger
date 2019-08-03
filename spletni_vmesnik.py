@@ -21,7 +21,7 @@ def predstavi_se_resnica():
     if ime == '':
         napaka = 'Lažeš, kradeš, bolhe ješ,...'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
-    elif ime[0] not in ['ABCČDEFGHIJKLMNOPRSŠTUVZŽQWXYĆĐ']:
+    elif ime[0] not in 'ABCČDEFGHIJKLMNOPRSŠTUVZŽQWXYĆĐ':
         napaka = 'Velika začetnica pa se spodobi. Tako slab pa nisem v slovnici.'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
     else:
@@ -33,7 +33,8 @@ def predstavi_se_zmaga():
     if resnica in ['Da', 'Ne', 'Mogoče']:
         return bottle.template('igra_predstavitve_3.tpl')
     else:
-        return bottle.template('igra_predstavitve_razocaranje.tpl')
+        napaka = 'Razočaral si me, ker nisi izbral nobene možnosti.'
+        return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
 
 #UGANI ŠTEVILO
 from igra_ugani_stevilo import Interval, Stevilo
