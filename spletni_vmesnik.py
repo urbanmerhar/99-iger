@@ -73,7 +73,8 @@ def kviz_resitev():
 
 # MISLIM DA ŠUMNIKI PRI DVEH ODGOVORIH NAGAJATA,
 # paradiŽnik in nemŠki generalmarŠal ne delata
-# torej vprasanja_za_kviz[i][0] mogoče ni v unicode
+# vprasanja_za_kviz[i][0] so utf-8
+# sepravi težava je v if stavku: utf-8 != unicode(odgovori)
 
 
 #ZAGON BOTTLA
