@@ -22,7 +22,8 @@ def predstavi_se_resnica():
 
 @bottle.post('/Igra_predstavitve_konec/')
 def predstavi_se_zmaga():
-    #resnica = bottle.request.forms.getunicode('odgovor')
+    # resnica = bottle.request.forms.getunicode('odgovor')
+    # če jo bom slučajno potreboval (DA, NE, MOGOČE)
     return bottle.template('igra_predstavitve_3.tpl')
 
 #UGANI ŠTEVILO
