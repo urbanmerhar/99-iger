@@ -3,3 +3,4 @@
 <hr />
 
 Razočaral si me, kr nisi izbral nobene možnosti.
+TUKAJ BO VELIKA SLIKA MOJEGA RAZOČARANJA
