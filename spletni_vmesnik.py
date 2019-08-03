@@ -26,7 +26,7 @@ def predstavi_se_zmaga():
     if resnica in ['Da', 'Ne', 'Mogoče']:
         return bottle.template('igra_predstavitve_3.tpl')
     else:
-        return 'Vsaj izpolni vprašanje...'
+        return bottle.template('igra_predstavitve_razocaranje.tpl')
 
 #UGANI ŠTEVILO
 from igra_ugani_stevilo import Interval, Stevilo
