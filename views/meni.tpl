@@ -21,3 +21,8 @@ TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
     </li>
 
 </ul>
+
+<hr />
+<form action="/Opis_projekta/">
+    <input type="submit" value="O projektu">
+</form>

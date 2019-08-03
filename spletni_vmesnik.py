@@ -5,6 +5,11 @@ import bottle
 def glavni_meni():
     return bottle.template('meni.tpl')
 
+#O PROJEKTU
+@bottle.get('/Opis_projekta/')
+def opis_projekta():
+    return bottle.template('opis_projekta.tpl')
+
 #IGRA PREDSTAVITVE
 @bottle.get('/Igra_predstavitve/')
 def predstavi_se():
