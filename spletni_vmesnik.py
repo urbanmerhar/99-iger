@@ -18,7 +18,14 @@ def predstavi_se():
 @bottle.post('/Igra_predstavitve/')
 def predstavi_se_resnica():
     ime = bottle.request.forms.getunicode('ime_igralca')
-    return bottle.template('igra_predstavitve_2.tpl', ime=ime)
+    if ime == '':
+        napaka = 'Lažeš, kdradeš, bolhe ješ,...'
+        return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
+    elif ime[0] not in ['ABCČDEFGHIJKLMNOPRSŠTUVZŽQWXYĆĐ']:
+        napaka = 'Velika začetnica pa se spodobi. Tako slab pa nisem v slovnici.'
+        return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
+    else:
+        return bottle.template('igra_predstavitve_2.tpl', ime=ime)
 
 @bottle.post('/Igra_predstavitve_konec/')
 def predstavi_se_zmaga():
@@ -39,7 +46,12 @@ def ugani_stevilo():
 def interval_ugibanja():
     a = int(bottle.request.forms.getunicode('a'))
     b = int(bottle.request.forms.getunicode('b'))
-    return bottle.template('ugibaj_stevilo.tpl', a=a, b=b)
+    if a > b:
+        return 'Lepo piše, da mora biti prvi manjši od drugega.'
+    elif a == b:
+        return 'To bo pa dolga igra....'
+    else:
+        return bottle.template('ugibaj_stevilo.tpl', a=a, b=b)
 
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():

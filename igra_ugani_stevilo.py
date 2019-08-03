@@ -1,3 +1,7 @@
+# Mogoče bi jo naredil kar tako, da si python izbere 3 naključna števila in zgornjo in spodnjo vzame za interval, vmesno pa za iskano število.
+# Uporabnik potem samo vnaša koliko misli da bo rešitev, jaz pa redirectam nazaj na ponovno iskanje oz. zmago.
+# Če glede na velikost intervala uporabnik ugane število v dovolj malo poskusih dobi za nagrado zanimivost.
+
 class Interval:
     def __init__(self, a, b):
         self.spodnja_meja = None
