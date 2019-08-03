@@ -19,7 +19,7 @@ def predstavi_se():
 def predstavi_se_resnica():
     ime = bottle.request.forms.getunicode('ime_igralca')
     if ime == '':
-        napaka = 'Lažeš, kdradeš, bolhe ješ,...'
+        napaka = 'Lažeš, kradeš, bolhe ješ,...'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
     elif ime[0] not in ['ABCČDEFGHIJKLMNOPRSŠTUVZŽQWXYĆĐ']:
         napaka = 'Velika začetnica pa se spodobi. Tako slab pa nisem v slovnici.'
