@@ -2,8 +2,8 @@
 import random
 
 seznam_sal = [
-    'Kaj dobiš, če daš dva polža skupaj? Celža.',
-    'ŠALA'
+    'Kaj dobiš, če daš dva polža skupaj? Celža!',
+    'Kateri avto gre najhitreje po makedamu? Služben!'
     
 ]
 
