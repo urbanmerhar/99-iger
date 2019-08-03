@@ -6,8 +6,8 @@ class Interval:
     def nastavi_spodnjo_mejo(self, spodnja):
         self.spodnja_meja = spodnja
 
-    def nastavi_zgornjo_mejo(self):
-        pass
+    def nastavi_zgornjo_mejo(self, zgornja):
+        self.zgornja_meja = zgornja
 
 class Stevilo:
     def __init__(self, trenutno_stevilo, kolikokrat_smo_ze_ugibali):
