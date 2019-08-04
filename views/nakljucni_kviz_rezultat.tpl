@@ -8,7 +8,7 @@
         Ker si pravilno odgovoril na vsa dana vprašanja dobiš kar dve nagradi.
 
         <p>NAGRADA:</p>
-        <br />
+        <br>
         % from nagrade import seznam_sal, seznam_zanimivosti, vrni_nagrado
                 <p>Šala:
                 {{vrni_nagrado(seznam_sal)}}
