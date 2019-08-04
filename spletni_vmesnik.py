@@ -96,7 +96,7 @@ def kviz_resitev():
             pravilno += 1
     return bottle.template('nakljucni_kviz_rezultat', pravilno=pravilno, vse_mozne_tocke=vse_mozne_tocke)
 
-# MISLIM DA ŠUMNIKI PRI DVEH ODGOVORIH NAGAJATA,
+# MISLIM DA ŠUMNIKA PRI DVEH ODGOVORIH NAGAJATA,
 # paradiŽnik in nemŠki generalmarŠal ne delata
 # program moti to, da je v ključu key() šumnik
 # NAPAKA JE POTEM MOGOČE PRI getunicode(i)
