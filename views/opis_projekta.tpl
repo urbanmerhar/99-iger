@@ -9,7 +9,9 @@ Projekt oziroma igra <em>99 IGER</em> je bila napisana za predmet <em>Uvod v pro
 <h2>Uporabne povezave:</h2>
  <ul>
     <li>
-        Povezave...
+        <a
+        href="https://github.com/">Github repositorij programa
+        </a>
     </li>
  </ul>
 Povezava na git, par besed o vsem, slikaj idejni cd, če ga najdem..
