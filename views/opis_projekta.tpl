@@ -2,9 +2,9 @@
 <h1>Opis projekta</h1>
 <hr />
 
-Projekt oziroma igra <em>99 IGER</em> je bila napisana za predmet <em>Uvod v programiranje</em>. Ideja in navdih zanjo so spomini na stare CD-je iger, na katerih je pisalo kako
+<p>Projekt oziroma igra <em>99 IGER</em> je bila napisana za predmet <em>Uvod v programiranje</em>. Ideja in navdih zanjo so spomini na stare CD-je iger, na katerih je pisalo kako
  veliko iger je na njih, kar pa seveda nikoli ni bilo res. Zato so v tem programu kljub naslovu <em>99 IGER</em> v njem le <em>3</em> igre.
- <br />
+ </p>
 
 <h2>Uporabne povezave:</h2>
  <ul>
