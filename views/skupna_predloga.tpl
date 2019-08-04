@@ -2,7 +2,8 @@
     <head>
         <title>99 iger</title>
     </head>
-    <body>
+    <!--Barva ozadja.-->
+    <body style="background-color:powderblue">
         {{!base}}
         <hr />
             <form action="/">
