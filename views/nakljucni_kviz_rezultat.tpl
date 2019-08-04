@@ -12,6 +12,7 @@ Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.
         % from nagrade import seznam_sal, seznam_zanimivost, vrni_nagrado
                 Šala:
                 {{vrni_nagrado(seznam_sal)}}
+                <br />
                 in zanimivost:
                 {{vrni_nagrado(seznam_zanimivosti)}}
         % end
