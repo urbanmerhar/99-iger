@@ -5,7 +5,7 @@
     <body>
         {{!base}}
         <hr />
-            <form action="/meni/">
+            <form action="/">
                 <input type="submit" value="Nazaj na meni">
             </form>
         <hr />

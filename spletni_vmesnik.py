@@ -1,7 +1,7 @@
 import bottle
 
 #MENI
-@bottle.get('/meni/')
+@bottle.get('/')
 def glavni_meni():
     return bottle.template('meni.tpl')
 
