@@ -2,11 +2,11 @@
 <h1>99 IGER mogoče bi to prikazal kar s sliko.</h1>
 <hr />
 TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
-
+<h2>Igre:</h2>
 <ul>
     <li>
         <form action="/Igra_predstavitve/">
-            <input type="submit" value="Igra prestavitve">
+            <input type="submit" value="Igra predstavitve">
         </form>
     </li>
     <li>
