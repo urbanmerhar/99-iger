@@ -38,6 +38,8 @@ def predstavi_se_zmaga():
 
 #UGANI ŠTEVILO
 from igra_ugani_stevilo import Interval, Stevilo
+from ugani_stevilo import Ugani_stevilo
+import random
 
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
@@ -57,7 +59,15 @@ def interval_ugibanja():
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():
     stevilo_ki_ga_odda_igralec = int(bottle.request.forms.getunicode('trenutno_stevilo'))
-    return 'Ugibal si število {}.'.format(stevilo_ki_ga_odda_igralec)
+    stevilo_ki_ga_iscemo = Stevilo()
+    if stevilo_ki_ga_iscemo.kolikokrat_smo_ze_ugibali == 0:
+        # interval ni pravilen
+        stevilo_ki_ga_iscemo.iskano_stevilo = random.randint(0, 100)
+        return 'iskano stevilo: {}'.format(stevilo_ki_ga_iscemo.iskano_stevilo)
+    #if stevilo_ki_ga_iscemo.trenutno_stevilo == stevilo_ki_ga_iscemo.iskano_stevilo:
+    #    return bottle.redirect('/Uganil_si_pravo_stevilo/')
+    else:
+        return 'Ugibal si število {}.'.format(stevilo_ki_ga_iscemo.trenutno_stevilo)
 
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():

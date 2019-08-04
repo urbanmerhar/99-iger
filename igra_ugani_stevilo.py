@@ -3,18 +3,13 @@
 # Če glede na velikost intervala uporabnik ugane število v dovolj malo poskusih dobi za nagrado zanimivost.
 
 class Interval:
-    def __init__(self, a, b):
-        self.spodnja_meja = None
-        self.zgornja_meja = None
-
-    def nastavi_spodnjo_mejo(self, spodnja):
+    def __init__(self, spodnja, zgornja):
         self.spodnja_meja = spodnja
-
-    def nastavi_zgornjo_mejo(self, zgornja):
         self.zgornja_meja = zgornja
 
 class Stevilo:
     def __init__(self):
+        self.iskano_stevilo = None
         self.trenutno_stevilo = None
         self.kolikokrat_smo_ze_ugibali = 0
 
