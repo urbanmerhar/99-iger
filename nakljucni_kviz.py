@@ -17,7 +17,7 @@ vprasanja_za_kviz = {
     'Tar':['Azijska divja koza', 'Tibetansko govedo', 'Afriška volovska antilopa', 'Pritlikav indonezijski konj']
 }
 
-# da se ne bodo vprasanja_za_kviz kaj pokvarila
+#Da se ne bodo vprasanja_za_kviz kaj pokvarila
 vprasanja = copy.deepcopy(vprasanja_za_kviz)
 
 #Ustvarimo funkcijo za mešanje, da ne bo kviz ves čas enak.
