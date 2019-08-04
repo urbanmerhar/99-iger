@@ -5,7 +5,7 @@
     alt="KARBO PISALO ČE GREŠ Z MIŠKO ČEZ"
     style="width:128px;height:128px;">
 -->
-<hr />
+<hr>
 TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
 <h2>Igre:</h2>
 <ul>
@@ -27,7 +27,7 @@ TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
 
 </ul>
 
-<hr />
+<hr>
 <form action="/Opis_projekta/">
     <input type="submit" value="O projektu">
 </form>

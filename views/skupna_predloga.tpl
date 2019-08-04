@@ -5,11 +5,11 @@
     <!--Barva ozadja.-->
     <body style="background-color:powderblue">
         {{!base}}
-        <hr />
+        <hr>
             <form action="/">
                 <input type="submit" value="Nazaj na meni">
             </form>
-        <hr />
+        <hr>
         <footer>© 2019, Urban Merhar</footer>
     </body>
 </html>

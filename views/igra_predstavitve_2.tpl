@@ -1,6 +1,6 @@
 % rebase('skupna_predloga.tpl')
 <h1>Igra predstavitve</h1>
-<hr />
+<hr>
 <p><em>Ali si res {{ime}}?</em>
 </p>
 

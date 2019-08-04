@@ -1,6 +1,6 @@
 % rebase('skupna_predloga.tpl')
 <h1>Ugibaj število</h1>
-<hr />
+<hr>
 <p>
     Zdaj ko si si izbral svoj interval poskusi na njem uganiti naključno izbrano število.
 </p>

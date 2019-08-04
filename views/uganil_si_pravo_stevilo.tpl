@@ -1,15 +1,15 @@
 % rebase('skupna_predloga.tpl')
 <h1>Ugani število</h1>
-<hr />
+<hr>
 <p>Uganil si pravo število, to število je bilo: ???</p>
 
 Potreboval si ??? poskusov.
-<br />
+<br>
+<p>
 NAGRADA
 % from nagrade import seznam_zanimivosti, vrni_nagrado
-    <p>
     Zanimivost:
-    <br />
+    <br>
     {{vrni_nagrado(seznam_zanimivosti)}}
-    </p>
 % end
+</p>
