@@ -4,8 +4,8 @@
 <h2>Ker tega ne morem preveriti si vseeno zmagal!</h2>
 
 <p>
-NAGRADA:<br>
+<h3>Šala:</h3>
     % from nagrade import seznam_sal, vrni_nagrado
-        <br>{{vrni_nagrado(seznam_sal)}}
+        {{vrni_nagrado(seznam_sal)}}
     % end
 </p>
