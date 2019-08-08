@@ -2,18 +2,16 @@
 <h1>Naključni kviz</h1>
 <hr>
 
-<p>Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.</p>
+<h2>Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.</h2>
 
 % if pravilno == 10:
-        Ker si pravilno odgovoril na vsa dana vprašanja dobiš kar dve nagradi.
+        <h3>Ker si pravilno odgovoril na vsa dana vprašanja dobiš kar dve nagradi.</h3>
 
-        <p>NAGRADA:</p>
-        <br>
         % from nagrade import seznam_sal, seznam_zanimivosti, vrni_nagrado
-                <p>Šala:
+                <p><h3>Šala:</h3>
                 {{vrni_nagrado(seznam_sal)}}
                 <br>
-                in zanimivost:
+                <h3>Zanimivost:</h3>
                 {{vrni_nagrado(seznam_zanimivosti)}}
                 </p>
         % end
