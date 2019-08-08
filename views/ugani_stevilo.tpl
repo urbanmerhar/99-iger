@@ -6,18 +6,14 @@
     <li>
         Vedno iščeva celoštevilo.
     </li>
-    <li>
-        V oknca spodaj najprej vneseš spodnjo mejo in nato zgornjo mejo ugibanja.
-    </li>
 </ul>
 </p>
 <hr>
-
-<p>
-    Izberi interval na katerem boš iskal naključno število.
-</p>
-<form action="/Ugani_stevilo/" method="POST">
-    Od: <input type="text" name="a">
-    Do: <input type="text" name="b">
-    <input type="submit" value="Potrdi">
+<p>Ugibaš na intervalu od <b>{{spodnja_meja}}</b> do <b>{{zgornja_meja}}</b>.</p>
+<form action="/Ugibaj_stevilo/" method="POST">
+    Število: <input type="text" name="trenutno_stevilo">
+    <input type='submit' value="Ugibaj" />
+</form>
+Iščemo: {{iskano_stevilo}}
+Od {{spodnja_meja}}, do {{zgornja_meja}}
 </form>

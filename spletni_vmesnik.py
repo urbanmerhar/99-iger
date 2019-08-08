@@ -37,41 +37,48 @@ def predstavi_se_zmaga():
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
 
 #UGANI ŠTEVILO
-from igra_ugani_stevilo import Interval, Stevilo
 from ugani_stevilo import Ugani_stevilo
 import random
 
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
-    return bottle.template('ugani_stevilo.tpl')
-
-@bottle.post('/Ugani_stevilo/')
-def interval_ugibanja():
-    a = int(bottle.request.forms.getunicode('a'))
-    b = int(bottle.request.forms.getunicode('b'))
-    if a > b:
-        return 'Lepo piše, da mora biti prvi manjši od drugega.'
-    elif a == b:
-        return 'To bo pa dolga igra....'
-    else:
-        return bottle.template('ugibaj_stevilo.tpl', a=a, b=b)
+    igra = Ugani_stevilo()
+    if igra.iskano_stevilo == None:
+        zgornja_meja = igra.zgornja_meja
+        spodnja_meja = igra.spodnja_meja
+        igra.iskano_stevilo = random.randint(spodnja_meja, zgornja_meja)
+        iskano_stevilo = igra.iskano_stevilo
+    return bottle.template('ugani_stevilo.tpl', zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo )
 
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():
-    stevilo_ki_ga_odda_igralec = int(bottle.request.forms.getunicode('trenutno_stevilo'))
-    stevilo_ki_ga_iscemo = Stevilo()
-    if stevilo_ki_ga_iscemo.kolikokrat_smo_ze_ugibali == 0:
-        # interval ni pravilen
-        stevilo_ki_ga_iscemo.iskano_stevilo = random.randint(0, 100)
-        return 'iskano stevilo: {}'.format(stevilo_ki_ga_iscemo.iskano_stevilo)
-    #if stevilo_ki_ga_iscemo.trenutno_stevilo == stevilo_ki_ga_iscemo.iskano_stevilo:
-    #    return bottle.redirect('/Uganil_si_pravo_stevilo/')
-    else:
-        return 'Ugibal si število {}.'.format(stevilo_ki_ga_iscemo.trenutno_stevilo)
+    ugibano_stevilo = int(bottle.request.forms.getunicode('trenutno_stevilo'))
+    return bottle.redirect('/Ugani_stevilo/')
+
+#    return 'Ugibaš na intervalu od {} do {}. Iskali smo {}. Poskusili smo z {}.'.format(spodnja_meja, zgornja_meja, iskano_stevilo, ugibano_stevilo)
 
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():
     return bottle.template('uganil_si_pravo_stevilo.tpl')
+
+@bottle.get('/poskus/')
+def stevilo():
+    x = random.randint(0, 100)
+    odgovor = None
+    return bottle.template('test.tpl', odgovor=odgovor)
+
+@bottle.post('/ugani/')
+def resitev():
+    iskano_stevilo = int(bottle.request.forms.getunicode('ugani'))
+    if iskano_stevilo == x:
+        odgovor = 'pravilno'
+        return bottle.template('test.tpl', odgovor=odgovor)
+    elif iskano_stevilo > x:
+        odgovor = 'preveliko'
+        return bottle.template('test.tpl', odgovor=odgovor)
+    elif iskano_stevilo < x:
+        odgovor = 'prenizko'
+        return bottle.template('test.tpl', odgovor=odgovor)
 
 
 #NAKLJUČNI KVIZ
