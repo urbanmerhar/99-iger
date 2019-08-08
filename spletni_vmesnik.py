@@ -18,6 +18,7 @@ def predstavi_se():
 @bottle.post('/Igra_predstavitve/')
 def predstavi_se_resnica():
     ime = bottle.request.forms.getunicode('ime_igralca')
+    # Vsaj na par stvari smo lahko pozorni...
     if ime == '':
         napaka = 'Lažeš kradeš, bolhe ješ,...'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
