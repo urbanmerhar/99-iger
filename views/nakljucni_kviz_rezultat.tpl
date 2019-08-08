@@ -18,9 +18,9 @@
 
 
 % if pravilno == 8 or pravilno == 9:
-<p>NAGRADA:</p>
-<br>
     % from nagrade import seznam_sal, vrni_nagrado
-        <p>{{vrni_nagrado(seznam_sal)}}</p>
+        <p><h3>Šala:</h3>
+        {{vrni_nagrado(seznam_sal)}}
+        </p>
     % end
 
