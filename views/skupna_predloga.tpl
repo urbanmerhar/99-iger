@@ -4,6 +4,7 @@
     </head>
     <!--Barva ozadja.-->
     <body style="background-color:powderblue">
+        <font size="4">
         {{!base}}
         <hr>
             <form action="/">
