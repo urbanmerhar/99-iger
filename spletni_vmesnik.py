@@ -61,26 +61,6 @@ def ugibaj_stevilo():
 def uganil_si_pravo_stevilo():
     return bottle.template('uganil_si_pravo_stevilo.tpl')
 
-@bottle.get('/poskus/')
-def stevilo():
-    x = random.randint(0, 100)
-    odgovor = None
-    return bottle.template('test.tpl', odgovor=odgovor)
-
-@bottle.post('/ugani/')
-def resitev():
-    iskano_stevilo = int(bottle.request.forms.getunicode('ugani'))
-    if iskano_stevilo == x:
-        odgovor = 'pravilno'
-        return bottle.template('test.tpl', odgovor=odgovor)
-    elif iskano_stevilo > x:
-        odgovor = 'preveliko'
-        return bottle.template('test.tpl', odgovor=odgovor)
-    elif iskano_stevilo < x:
-        odgovor = 'prenizko'
-        return bottle.template('test.tpl', odgovor=odgovor)
-
-
 #NAKLJUČNI KVIZ
 import random
 from nakljucni_kviz import vprasanja_za_kviz, vprasanja, premesaj
