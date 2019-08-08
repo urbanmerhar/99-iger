@@ -31,6 +31,7 @@ def predstavi_se_resnica():
 @bottle.post('/Igra_predstavitve_konec/')
 def predstavi_se_zmaga():
     resnica = bottle.request.forms.getunicode('odgovor')
+    # Za zmago naj vsaj odgovori na vprašanje.
     if resnica in ['Da', 'Ne', 'Mogoče']:
         return bottle.template('igra_predstavitve_3.tpl')
     else:
