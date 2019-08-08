@@ -10,7 +10,7 @@ class Ugani_stevilo:
         if a < b:
             self.spodnja_meja = a
             self.zgornja_meja = b
-        elif a > b:
+        elif a >= b:
             self.spodnja_meja = b
             self.zgornja_meja = a
         
