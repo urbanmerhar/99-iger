@@ -12,7 +12,7 @@ vprasanja_za_kviz = {
     'State of Washington':['Zvezna država v ZDA', 'Glavno mesto ZDA', 'Nekdanji predsednik ZDA', 'Samostojna država'],
     'Jak':['Tibetansko govedo', 'Vrsta bizona', 'Afriška volovska antilopa', 'Azijska divja koza'],
     'Fobos':['Marsov naravni satelit', 'Jupitrov naravni satelit', 'Venerin naravni satelit', 'Zemljin naravni satelit' ],
-    'Cerera':['Rimska boginja ljubezni in pritlikavi planet', 'Samo rimska boginja ljubezni', 'Egipčanska boginja neba', 'Grška boginja zdravilstva'],
+    'Cerera':['Rimska boginja ljubezni in pritlikavi planet', 'Rimska boginja ljubezni', 'Egipčanska boginja neba', 'Grška boginja zdravilstva'],
     'bil vzdevek generala Erwina Rommla':['Puščavska lisica', 'Afriški lev', 'Puščavski tiger', 'Nemški panter'],
     'Tar':['Azijska divja koza', 'Tibetansko govedo', 'Afriška volovska antilopa', 'Pritlikav indonezijski konj']
 }
