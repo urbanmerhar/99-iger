@@ -2,7 +2,7 @@ import random
 
 class Ugani_stevilo:
     def __init__(self):
-        #self.trenutno_stevilo = None
+        self.trenutno_stevilo = None
         self.kolikokrat_smo_ze_ugibali = 0
         a = random.randint(-1, 3)
         b = random.randint(-1, 3)
