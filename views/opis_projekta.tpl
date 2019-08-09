@@ -16,5 +16,8 @@
     <li>
         Povezava do spletne strani fmf.
     </li>
+    <li>
+        Povezava do spletne strani kjer sem naredil naslove.
+    </li>
  </ul>
 Povezava na git, par besed o vsem, slikaj idejni cd, če ga najdem..

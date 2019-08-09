@@ -56,6 +56,7 @@ def ugani_stevilo():
 def test():
     trenutno_stevilo = bottle.request.forms.getunicode('trenutno_stevilo')
     return 'ugibal si {}'.format(trenutno_stevilo)
+# problem tukaj je, da ne znam prenesti podatkov intervala in stevila, ki ga iscem v nasledniji del igre
 
 
 @bottle.post('/Ugibaj_stevilo/')
