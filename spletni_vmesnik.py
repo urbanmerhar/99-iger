@@ -45,12 +45,11 @@ import random
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
     igra = Ugani_stevilo()
-    if igra.iskano_stevilo == None:
-        zgornja_meja = igra.zgornja_meja
-        spodnja_meja = igra.spodnja_meja
-        igra.iskano_stevilo = random.randint(spodnja_meja, zgornja_meja)
-        iskano_stevilo = igra.iskano_stevilo
-    return bottle.template('ugani_stevilo.tpl', zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo )
+    zgornja_meja = igra.zgornja_meja
+    spodnja_meja = igra.spodnja_meja
+    igra.iskano_stevilo = random.randint(spodnja_meja, zgornja_meja)
+    iskano_stevilo = igra.iskano_stevilo
+    return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo )
 
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():
