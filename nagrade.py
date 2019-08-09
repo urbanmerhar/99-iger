@@ -4,7 +4,9 @@ import random
 seznam_sal = [
     'Kaj dobiš, če daš dva polža skupaj? Celža!',
     'Kateri avto gre najhitreje po makadamu? Služben!',
-    'Chuck Norris je posnel izumitev kamere!'
+    'Chuck Norris je posnel izumitev kamere!',
+    'Zakaj se policist v kinu, ko gleda komedijo, usede v zadnjo vrsto? Kdor se zadnji smeje, se najslajše smeje!',
+    'Kako dobiš marmelado? Tako da olupiš krof!'
     
 ]
 
