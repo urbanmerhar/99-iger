@@ -42,30 +42,49 @@ def predstavi_se_zmaga():
 from ugani_stevilo import Ugani_stevilo
 import random
 
+igra = Ugani_stevilo()
+igra.ustvari_novo_igro(igra)
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
-    igra = Ugani_stevilo()
+    # Najdi način za resetiranje igre
+    # COOKIES??
     zgornja_meja = igra.zgornja_meja
     spodnja_meja = igra.spodnja_meja
-    igra.iskano_stevilo = random.randint(spodnja_meja, zgornja_meja)
     iskano_stevilo = igra.iskano_stevilo
-    return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo )
+    stevilo_ugibov = igra.kolikokrat_smo_ze_ugibali
 
-# TEST
-@bottle.post('/Ugani_stevilo/')
-def test():
-    trenutno_stevilo = bottle.request.forms.getunicode('trenutno_stevilo')
-    return 'ugibal si {}'.format(trenutno_stevilo)
-# problem tukaj je, da ne znam prenesti podatkov intervala in stevila, ki ga iscem v nasledniji del igre
+    trenutno_stevilo = bottle.request.query.trenutno_stevilo
+    sporocilo = ''
+    if trenutno_stevilo == '':
+        igra.novo_ugibanje(trenutno_stevilo)
+        return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
+    # NIŽJE
+    elif int(trenutno_stevilo) > iskano_stevilo:
+        sporocilo = 'Nižje.'
+        igra.novo_ugibanje(trenutno_stevilo)
+        return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
+    # VIŠJE
+    elif int(trenutno_stevilo) < iskano_stevilo:
+        sporocilo = 'Višje.'
+        igra.novo_ugibanje(trenutno_stevilo)
+        return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
+    # ZMAGA
+    elif int(trenutno_stevilo) == iskano_stevilo:
+        igra.ustvari_novo_igro(igra)
+        return bottle.template('uganil_si_pravo_stevilo.tpl', iskano_stevilo=iskano_stevilo, stevilo_ugibov=stevilo_ugibov)
+    # POMOJE JE TOLE NEPOTREBNO
+    #else:
+    #    igra.novo_ugibanje(trenutno_stevilo)
+    #    return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
 
-
+#==============================  DELUJE DA TEGA NE BOM RABIL VEČ
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():
     ugibano_stevilo = int(bottle.request.forms.getunicode('trenutno_stevilo'))
     return bottle.redirect('/Ugani_stevilo/')
 
 #    return 'Ugibaš na intervalu od {} do {}. Iskali smo {}. Poskusili smo z {}.'.format(spodnja_meja, zgornja_meja, iskano_stevilo, ugibano_stevilo)
-
+#==============================
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():
     return bottle.template('uganil_si_pravo_stevilo.tpl')
