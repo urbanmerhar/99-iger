@@ -10,7 +10,7 @@
  <ul>
     <li>
         <a
-        href="https://github.com/">Github repositorij programa
+        href="https://github.com/urbanmerhar/99-iger">Github repositorij programa
         </a>
     </li>
     <li>
