@@ -51,6 +51,13 @@ def ugani_stevilo():
     iskano_stevilo = igra.iskano_stevilo
     return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo )
 
+# TEST
+@bottle.post('/Ugani_stevilo/')
+def test():
+    trenutno_stevilo = bottle.request.forms.getunicode('trenutno_stevilo')
+    return 'ugibal si {}'.format(trenutno_stevilo)
+
+
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():
     ugibano_stevilo = int(bottle.request.forms.getunicode('trenutno_stevilo'))
