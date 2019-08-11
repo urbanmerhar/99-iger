@@ -1,8 +1,7 @@
 % rebase('skupna_predloga.tpl')
-<h1>99 IGER mogoče bi to prikazal kar s sliko.</h1>
-<img src="/static/slike/99_IGER.png"
-    alt="KAR BO PISALO ČE GREŠ Z MIŠKO ČEZ"
-    style="width:128px;height:128px;"
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/99-IGER.png"
+    style="width:433px;height:129px;"
  />
 <hr>
 TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
