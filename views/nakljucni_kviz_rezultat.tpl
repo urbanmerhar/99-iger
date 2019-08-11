@@ -1,5 +1,8 @@
 % rebase('skupna_predloga.tpl')
-<h1>Naključni kviz</h1>
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/NAKLJUCNI-KVIZ.png"
+    style="width:693px;height:103px;"
+ />
 <hr>
 
 <h2>Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.</h2>

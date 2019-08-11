@@ -1,5 +1,8 @@
 % rebase('skupna_predloga.tpl')
-<h1>Naključni kviz</h1>
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/NAKLJUCNI-KVIZ.png"
+    style="width:693px;height:103px;"
+ />
 <hr>
 <p>Navodila so preprosta. Odgovori na dana vprašanja, tako da označiš svoj izbrani odgovor, če ne označiš ničesar se to šteje kot napačen odgovor.
 Odgovore oddaš s klikom na gumb Oddaj spodaj. 
