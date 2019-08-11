@@ -5,6 +5,11 @@ import bottle
 def glavni_meni():
     return bottle.template('meni.tpl')
 
+#SLIKE
+@bottle.get('/static/slike/<ime_dat>')
+def server_static(ime_dat):
+    return bottle.static_file(ime_dat, root='./static/slike')
+
 #O PROJEKTU
 @bottle.get('/Opis_projekta/')
 def opis_projekta():

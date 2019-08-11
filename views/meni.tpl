@@ -1,10 +1,9 @@
 % rebase('skupna_predloga.tpl')
 <h1>99 IGER mogoče bi to prikazal kar s sliko.</h1>
-<!--KOMENTAR za naprej
-<img src="/slike/IMESLIKE"
-    alt="KARBO PISALO ČE GREŠ Z MIŠKO ČEZ"
-    style="width:128px;height:128px;">
--->
+<img src="/static/slike/99_IGER.png"
+    alt="KAR BO PISALO ČE GREŠ Z MIŠKO ČEZ"
+    style="width:128px;height:128px;"
+ />
 <hr>
 TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
 <h2>Igre:</h2>
