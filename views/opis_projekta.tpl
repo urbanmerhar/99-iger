@@ -1,5 +1,8 @@
 % rebase('skupna_predloga.tpl')
-<h1>Opis projekta</h1>
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/O-PROJEKTU.png"
+    style="width:529px;height:102px;"
+ />
 <hr>
 
 <p>Projekt oziroma igra <em>99 IGER</em> je bila napisana za predmet <em>Uvod v programiranje</em>. Ideja in navdih zanjo so spomini na stare CD-je iger, na katerih je pisalo
