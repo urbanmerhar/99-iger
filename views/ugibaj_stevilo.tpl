@@ -1,5 +1,8 @@
 % rebase('skupna_predloga.tpl')
-<h1>Ugibaj število</h1>
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/UGANI-STEVILO.png"
+    style="width:632px;height:102px;"
+ />
 <hr>
 <p>
     Zdaj ko si si izbral svoj interval poskusi na njem uganiti naključno izbrano število.

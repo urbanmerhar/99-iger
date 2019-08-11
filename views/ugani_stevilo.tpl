@@ -1,5 +1,8 @@
 % rebase('skupna_predloga.tpl')
-<h1>Ugani število</h1>
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/UGANI-STEVILO.png"
+    style="width:632px;height:102px;"
+ />
 <hr>
 <p>Preprosta igra ugibanja števil. Interval je vsakič znova ustvarjen naključno. Postavila pa bova par pravil:
 <ul>

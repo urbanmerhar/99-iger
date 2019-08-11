@@ -1,5 +1,8 @@
 % rebase('skupna_predloga.tpl')
-<h1>Ugani število</h1>
+<!--NASLOV JE ZDAJ KAR TA SLIKA-->
+<img src="/static/slike/UGANI-STEVILO.png"
+    style="width:632px;height:102px;"
+ />
 <hr>
 <p>Uganil si pravo število, to število je bilo: {{iskano_stevilo}}</p>
 
