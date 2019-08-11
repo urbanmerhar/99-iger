@@ -17,10 +17,14 @@
         </a>
     </li>
     <li>
-        Povezava do spletne strani fmf.
+        <a
+        href="https://www.fmf.uni-lj.si/si/">Fakulteta za matematiko in fiziko
+        </a>
     </li>
     <li>
-        Povezava do spletne strani kjer sem naredil naslove.
+        <a
+        href="https://textcraft.net/">Slike za naslove so bile narejene s pomočjo spletne strani textcraft
+        </a>
     </li>
  </ul>
 Povezava na git, par besed o vsem, slikaj idejni cd, če ga najdem..
