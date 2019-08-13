@@ -16,7 +16,7 @@
             </form>
           </div>
         <hr>
-    <footer class="footer">
+      <footer class="footer">
         <div class="content has-text-centered">
           <p>
             © 2019, Urban Merhar
