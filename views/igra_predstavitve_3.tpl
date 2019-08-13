@@ -4,11 +4,15 @@
     style="width:865px;height:104px;"
  />
 <hr>
-<h2>Ker tega ne morem preveriti si vseeno zmagal!</h2>
+<div class="container is-fluid">
+    Ker tega ne morem preveriti si vseeno zmagal!
+</div>
 
-<p>
-<h3>Šala:</h3>
-    % from nagrade import seznam_sal, vrni_nagrado
-        {{vrni_nagrado(seznam_sal)}}
-    % end
-</p>
+<div class="container is-fluid">
+    <p>
+    Šala:
+        % from nagrade import seznam_sal, vrni_nagrado
+            {{vrni_nagrado(seznam_sal)}}
+        % end
+    </p>
+</div>

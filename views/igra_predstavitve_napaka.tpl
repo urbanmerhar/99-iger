@@ -4,4 +4,8 @@
     style="width:865px;height:104px;"
  />
 <hr>
-<p>{{napaka}}</p>
+<div class="container is-fluid">
+    <p>
+        {{napaka}}
+    </p>
+</div>
