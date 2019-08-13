@@ -44,7 +44,6 @@ def predstavi_se_zmaga():
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
 
 #UGANI ŠTEVILO
-# Najdi način za resetiranje igre
 from ugani_stevilo import Ugani_stevilo
 import random
 
@@ -87,7 +86,6 @@ def ugani_stevilo():
 
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():
-    igra.ustvari_novo_igro(igra)
     return bottle.template('uganil_si_pravo_stevilo.tpl')
 
 #NAKLJUČNI KVIZ
