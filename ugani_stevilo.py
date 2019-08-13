@@ -21,7 +21,7 @@ class Ugani_stevilo:
         self.kolikokrat_smo_ze_ugibali += 1
     
     def stikalo(self, preklopi):
-        self.test = True
+        self.test = preklopi
 
     def stevilo_ugibanj_postavi_na_nic(self):
         self.kolikokrat_smo_ze_ugibali = 0
