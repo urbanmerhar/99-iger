@@ -44,13 +44,17 @@ def predstavi_se_zmaga():
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
 
 #UGANI ŠTEVILO
+# Najdi način za resetiranje igre
 from ugani_stevilo import Ugani_stevilo
 import random
 
 igra = Ugani_stevilo()
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
-    # Najdi način za resetiranje igre
+    if igra.test == False:
+        igra.ustvari_stevila()
+        igra.stikalo(True)
+    
     zgornja_meja = igra.zgornja_meja
     spodnja_meja = igra.spodnja_meja
     iskano_stevilo = igra.iskano_stevilo
@@ -73,8 +77,8 @@ def ugani_stevilo():
         return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
     # ZMAGA
     elif int(trenutno_stevilo) == iskano_stevilo:
-        #del igra
-        #igra = Ugani_stevilo()
+        igra.stikalo(False)
+        igra.stevilo_ugibanj_postavi_na_nic()
         return bottle.template('uganil_si_pravo_stevilo.tpl', iskano_stevilo=iskano_stevilo, stevilo_ugibov=stevilo_ugibov)
     # POMOJE JE TOLE NEPOTREBNO
     #else:
