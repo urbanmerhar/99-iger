@@ -85,14 +85,6 @@ def ugani_stevilo():
     #    igra.novo_ugibanje(trenutno_stevilo)
     #    return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
 
-#==============================  DELUJE TAKO DA TEGA NE BOM RABIL VEČ
-@bottle.post('/Ugibaj_stevilo/')
-def ugibaj_stevilo():
-    ugibano_stevilo = int(bottle.request.forms.getunicode('trenutno_stevilo'))
-    return bottle.redirect('/Ugani_stevilo/')
-
-#    return 'Ugibaš na intervalu od {} do {}. Iskali smo {}. Poskusili smo z {}.'.format(spodnja_meja, zgornja_meja, iskano_stevilo, ugibano_stevilo)
-#==============================
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():
     igra.ustvari_novo_igro(igra)
