@@ -52,7 +52,7 @@ igra.ustvari_novo_igro(igra)
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
     # Najdi način za resetiranje igre
-    # COOKIES??
+    igra = Ugani_stevilo()
     zgornja_meja = igra.zgornja_meja
     spodnja_meja = igra.spodnja_meja
     iskano_stevilo = igra.iskano_stevilo
@@ -82,7 +82,7 @@ def ugani_stevilo():
     #    igra.novo_ugibanje(trenutno_stevilo)
     #    return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
 
-#==============================  DELUJE DA TEGA NE BOM RABIL VEČ
+#==============================  DELUJE TAKO DA TEGA NE BOM RABIL VEČ
 @bottle.post('/Ugibaj_stevilo/')
 def ugibaj_stevilo():
     ugibano_stevilo = int(bottle.request.forms.getunicode('trenutno_stevilo'))
