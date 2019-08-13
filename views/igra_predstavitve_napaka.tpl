@@ -5,7 +5,7 @@
  />
 <hr>
 <div class="container is-fluid">
-    <p>
+    <p class="title is-3">
         {{napaka}}
     </p>
 </div>

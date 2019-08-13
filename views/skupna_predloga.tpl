@@ -12,7 +12,7 @@
         <hr>
           <div class="container is-fluid">
             <form action="/">
-                <input type="submit" value="Nazaj na meni">
+                <input class="button is-info" type="submit" value="Nazaj na meni">
             </form>
           </div>
         <hr>

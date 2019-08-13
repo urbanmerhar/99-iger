@@ -8,21 +8,21 @@
     TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
 </div>
 <div class="container is-fluid">
-    <h2>Igre:</h2>
+    <h1 class="title">Igre</h1>
     <ul>
         <li>
             <form action="/Igra_predstavitve/">
-                <input type="submit" value="Igra predstavitve">
+                <input class="button is-info" type="submit" value="Igra predstavitve">
             </form>
         </li>
         <li>
             <form action="/Ugani_stevilo/">
-                <input type="submit" value="Ugani število">    
+                <input class="button is-info" type="submit" value="Ugani število">    
             </form>
         </li>
         <li>
             <form action="/Nakljucni_kviz/">
-                <input type="submit" value="Naključni kviz">
+                <input class="button is-info" type="submit" value="Naključni kviz">
             </form>
         </li>
     </ul>
@@ -31,6 +31,6 @@
 <hr>
 <div class="container is-fluid">
     <form action="/Opis_projekta/">
-        <input type="submit" value="O projektu">
+        <input class="button is-info" type="submit" value="O projektu">
     </form>
 </div>

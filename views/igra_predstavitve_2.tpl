@@ -5,9 +5,11 @@
  />
 <hr>
 <div class="container is-fluid">
-    <p>
-        <em>Ali si res {{ime}}?</em>
-    </p>
+    <h4 class="subtitle is-4">
+        <p>
+            <em>Ali si res {{ime}}?</em>
+        </p>
+    </h4>
 </div>
 <div class="container is-fluid">
     <form action="/Igra_predstavitve_konec/" method="POST">
@@ -25,6 +27,8 @@
                 Mogoče
             </li>
         </ul>
-        <input type="submit" value="Hmmm">
+        <div class="control">
+            <input class="button is-info" type="submit" value="Hmmm">
+        </div>
     </form>
 </div>

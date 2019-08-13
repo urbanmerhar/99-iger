@@ -5,9 +5,11 @@
  />
 <hr>
 <div class="container is-fluid">
-    <p>
-        Igra predstavitve je igra kjer te vprašam kdo si. Vse kar moraš narediti je to da zapišeš svoje ime in ga nato potrdiš.
-    </p>
+    <h4 class="subtitle is-4">
+        <p>
+            Igra predstavitve je igra kjer te vprašam kdo si. Vse kar moraš narediti je to da zapišeš svoje ime in ga nato potrdiš.
+        </p>
+    </h4>
 </div>
 <hr>
 <div class="container is-fluid">
