@@ -48,11 +48,9 @@ from ugani_stevilo import Ugani_stevilo
 import random
 
 igra = Ugani_stevilo()
-igra.ustvari_novo_igro(igra)
 @bottle.get('/Ugani_stevilo/')
 def ugani_stevilo():
     # Najdi način za resetiranje igre
-    igra = Ugani_stevilo()
     zgornja_meja = igra.zgornja_meja
     spodnja_meja = igra.spodnja_meja
     iskano_stevilo = igra.iskano_stevilo
@@ -75,7 +73,8 @@ def ugani_stevilo():
         return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
     # ZMAGA
     elif int(trenutno_stevilo) == iskano_stevilo:
-        igra.ustvari_novo_igro(igra)
+        #del igra
+        #igra = Ugani_stevilo()
         return bottle.template('uganil_si_pravo_stevilo.tpl', iskano_stevilo=iskano_stevilo, stevilo_ugibov=stevilo_ugibov)
     # POMOJE JE TOLE NEPOTREBNO
     #else:
@@ -92,6 +91,7 @@ def ugibaj_stevilo():
 #==============================
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():
+    igra.ustvari_novo_igro(igra)
     return bottle.template('uganil_si_pravo_stevilo.tpl')
 
 #NAKLJUČNI KVIZ

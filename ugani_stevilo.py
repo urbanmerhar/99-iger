@@ -18,5 +18,4 @@ class Ugani_stevilo:
         self.trenutno_stevilo = stevilo_ki_ga_vnese_igralec
         self.kolikokrat_smo_ze_ugibali += 1
 
-    def ustvari_novo_igro(self, ime):
-        ime = Ugani_stevilo()
+        
