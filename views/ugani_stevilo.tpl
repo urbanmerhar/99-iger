@@ -7,17 +7,19 @@
 <div class="container is-fluid">
     <h4 class="subtitle is-4">
         <p>Preprosta igra ugibanja števil. Interval je vsakič znova ustvarjen naključno. Postavila pa bova par pravil:
-            <ul>
-                <li>
-                    Vedno iščeva celoštevilo.
-                </li>
-                <li>
-                    Če vneseš prazno polje se to šteje kot en poskus.
-                </li>
-                <li>
-                    Dokler ne uganeš trenutnega iskanega števila bo igra tekla naprej.
-                </li>
-            </ul>
+            <div class="content">
+                <ol type="1">
+                    <li>
+                        Vedno iščeva celoštevilo.
+                    </li>
+                    <li>
+                        Če vneseš prazno polje se to šteje kot en poskus.
+                    </li>
+                    <li>
+                        Dokler ne uganeš trenutnega iskanega števila bo igra tekla naprej.
+                    </li>
+                </ol>
+            </div>
         </p>
     </h4>
 </div>
