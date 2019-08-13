@@ -11,23 +11,28 @@
 </div>
 <div class="container is-fluid">
     <h1 class="subtitle is-1">Igre</h1>
-    <ul>
-        <li>
+
+    <div class="columns">
+        <div class="column is-one-third">
             <form action="/Igra_predstavitve/">
                 <input class="button is-info" type="submit" value="Igra predstavitve">
             </form>
-        </li>
-        <li>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-one-third">
             <form action="/Ugani_stevilo/">
                 <input class="button is-info" type="submit" value="Ugani število">    
             </form>
-        </li>
-        <li>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-one-third">
             <form action="/Nakljucni_kviz/">
                 <input class="button is-info" type="submit" value="Naključni kviz">
             </form>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>
 
 <hr>
