@@ -10,10 +10,18 @@
   <body style="background-color:powderblue">
     {{!base}}
         <hr>
+          <div class="container is-fluid">
             <form action="/">
                 <input type="submit" value="Nazaj na meni">
             </form>
+          </div>
         <hr>
-    <footer>© 2019, Urban Merhar</footer>
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            © 2019, Urban Merhar
+          </p>
+        </div>      
+      </footer>
   </body>
 </html>
