@@ -5,10 +5,12 @@
 />
 <hr>
 <div class="container is-fluid">
-    TU NAPIŠI KAKŠNO BESEDILO O IDEJI TEGA PROJEKTA/IGRE
+    <h1 class="title is-1">
+        Uživaj v igranju iger.
+    </h1>
 </div>
 <div class="container is-fluid">
-    <h1 class="title">Igre</h1>
+    <h1 class="subtitle is-1">Igre</h1>
     <ul>
         <li>
             <form action="/Igra_predstavitve/">
