@@ -8,8 +8,6 @@ class Ugani_stevilo:
         self.spodnja_meja = None
         self.zgornja_meja = None
         self.iskano_stevilo = None
-        #Pogoj še čekiraj kako deluje.
-        #self.pogoj_za_nagrado = (self.spodnja_meja + self.zgornja_meja) // 4
         
     def ustvari_stevila(self):
         a = random.randint(-100, 100)
