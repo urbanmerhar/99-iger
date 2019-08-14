@@ -18,14 +18,12 @@
       </div>
       <hr>
     </section>
-    <!--Da zapolne prostor do dna.-->
-    <section class="section is-fullheight">
-    </section>
-      <footer class="navbar is-fixed-bottom 
-        is-dark has-text-centered is-vcentered">
-        <div class="column">
-          © 2019, Urban Merhar
-        </div>
-      </footer>
+
+    <footer class="navbar is-fixed-bottom 
+      is-dark has-text-centered is-vcentered">
+      <div class="column">
+        © 2019, Urban Merhar
+      </div>
+    </footer>
   </body>
 </html>
