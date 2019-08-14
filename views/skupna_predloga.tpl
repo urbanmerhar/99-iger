@@ -8,20 +8,24 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body style="background-color:powderblue">
+    <section class="section is-fullheight">
     {{!base}}
-        <hr>
-          <div class="container is-fluid">
-            <form action="/">
-                <input class="button is-info" type="submit" value="Nazaj na meni">
-            </form>
-          </div>
-        <hr>
-      <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            © 2019, Urban Merhar
-          </p>
-        </div>      
+      <hr>
+      <div class="container is-fluid">
+        <form action="/">
+            <input class="button is-info" type="submit" value="Nazaj na meni">
+        </form>
+      </div>
+      <hr>
+    </section>
+    <!--Da zapolne prostor do dna.-->
+    <section class="section is-fullheight">
+    </section>
+      <footer class="navbar is-fixed-bottom 
+        is-dark has-text-centered is-vcentered">
+        <div class="column">
+          © 2019, Urban Merhar
+        </div>
       </footer>
   </body>
 </html>
