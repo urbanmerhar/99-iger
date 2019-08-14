@@ -13,7 +13,11 @@
 </div>
 <hr>
 <div class="container is-fluid">
-    <p><em>Kdo si?</em></p>
+        <h4 class="subtitle is-4">
+            <p>
+                <em>Kdo si?</em>
+            </p>
+        </h4>
 </div>
 <div class="container is-fluid">
     <nav class="level">

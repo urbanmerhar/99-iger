@@ -39,5 +39,12 @@
                 </a>
             </div>
         </div>
+        <div class="columns">
+            <div class="column is-one-third">
+                <a
+                    href="https://bulma.io/">Bulma
+                </a>
+            </div>
+        </div>
     </h4>
 </div>
