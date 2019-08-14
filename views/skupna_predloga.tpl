@@ -8,7 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body style="background-color:powderblue">
-    <section class="section is-fullheight">
+    <section class="hero is-fullheight">
     {{!base}}
       <hr>
       <div class="container is-fluid">
