@@ -33,7 +33,7 @@
         </ol>
         <div class="container is-fluid">
             <br>
-            <input class="button is-info" type='submit' value="Oddaj" />
+            <input class="button is-info is-large" type='submit' value="Oddaj" />
         </div>
     </form>
 </div>
