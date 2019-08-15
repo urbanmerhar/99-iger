@@ -6,18 +6,18 @@
 <hr>
 
 <div class="container is-fluid">
-    <h4 class="subtitle is-4">
+    <h3 class="subtitle is-3">
         <p>Projekt oziroma igra <em>99 IGER</em> je bila napisana za predmet <em>Uvod v programiranje</em>. Ideja in navdih zanjo so spomini na stare CD-je iger,na katerih
              je pisalo kako veliko iger je na njih, kar pa seveda nikoli ni bilo res. Zato so v tem programu kljub naslovu <em>99 IGER</em> v njem le <em>3</em> igre.
         </p>
-    </h4>
+    </h3>
 </div>
 <hr>
 <div class="container is-fluid">
-    <h4 class="title">
+    <h3 class="title is-3">
         Uporabne povezave:
-    </h4>
-    <h4 class="subtitle is-4">
+    </h3>
+    <h3 class="subtitle is-3">
         <div class="columns">
             <div class="column is-one-third">
                 <a
@@ -46,5 +46,5 @@
                 </a>
             </div>
         </div>
-    </h4>
+    </h3>
 </div>
