@@ -23,12 +23,10 @@
 <br>
 </div>
 <div class="container is-fluid">
-    <p>
     % from nagrade import seznam_zanimivosti, vrni_nagrado
-    <p class="title is-3">Zanimivost:</p>
-        <p class="subtitle is-3">
+    <h1 class="title is-1">Zanimivost:</h1>
+        <h1 class="subtitle is-1">
         {{vrni_nagrado(seznam_zanimivosti)}}
-        </p>
+        </h1>
     % end
-    </p>
 </div>

@@ -5,13 +5,13 @@
  />
 <hr>
 <div class="container is-fluid">
-    <h4 class="subtitle is-4">
+    <h3 class="subtitle is-3">
     <p>Navodila so preprosta. Odgovori na dana vprašanja, tako da označiš svoj izbrani odgovor, če ne označiš ničesar se to šteje kot napačen odgovor.
         Odgovore oddaš s klikom na gumb Oddaj spodaj. 
         Vsak odgovor je vreden eno točko.
         Če dobiš vsaj 8 točk dobiš nagrado.
     </p>
-    </h4>
+    </h3>
 </div>
 <hr>
 <div class="container is-fluid">
@@ -19,14 +19,14 @@
         <ol>
             % for i in q:
                 <li>
-                    <h4 class="subtitle is-4">
+                    <h3 class="subtitle is-3">
                         Kaj je <u>{{i}}</u> ?</li>
-                    </h4>
+                    </h3>
                     % for j in o[i]:
                         <label class="radio">
-                            <h5 class="subtitle is-5">
+                            <h4 class="subtitle is-4">
                                 <input type='radio' value='{{j}}' name='{{i}}' />{{j}}
-                            </h5>
+                            </h4>
                         </label>
                     % end
             % end

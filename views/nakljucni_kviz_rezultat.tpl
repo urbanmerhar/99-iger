@@ -12,35 +12,35 @@
 
 <div class="container is-fluid">
     % if pravilno == 10:
-        <h2 class="title is-2">
+        <h1 class="subtitle is-1">
             Ker si pravilno odgovoril na vsa dana vprašanja dobiš kar dve nagradi!
-        </h2>
+        </h1>
         % from nagrade import seznam_sal, seznam_zanimivosti, vrni_nagrado
-            <p class="title is-3">
+            <h1 class="title is-1">
                 Šala:
-            </p>
-           <p class="subtitle is-3">
+            </h1>
+           <h1 class="subtitle is-1">
                 {{vrni_nagrado(seznam_sal)}}
-            </p>
-            <p class="title is-3">
+           </h1>
+            <h1 class="title is-1">
                 Zanimivost:
-            </p>
-            <p class="subtitle is-3">
+            </h1>
+            <h1 class="subtitle is-1">
                 {{vrni_nagrado(seznam_zanimivosti)}}
-            </p>
+            </h1>
         % end
 
     % if pravilno == 8 or pravilno == 9:
-        <h2 class="title is-2">
+        <h1 class="title is-1">
             Ker si pravilno odgovoril na dovolj vprašanj dobiš nagrado.
-        </h2>
+        </h1>
         % from nagrade import seznam_sal, vrni_nagrado
-            <p class="title is-3">
+            <h1 class="title is-1">
                 Šala:
-            </p>
-            <p class="subtitle is-3">
+            </h1>
+            <h1 class="subtitle is-1">
                 {{vrni_nagrado(seznam_sal)}}
-            </p>
+            </h1>
         % end
 </div>
 

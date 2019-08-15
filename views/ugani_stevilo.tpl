@@ -5,7 +5,7 @@
  />
 <hr>
 <div class="container is-fluid">
-    <h4 class="subtitle is-4">
+    <h3 class="subtitle is-3">
         <p>Preprosta igra ugibanja števil. Interval je vsakič znova ustvarjen naključno. Postavila pa bova par pravil:
             <div class="content">
                 <ol type="1">
@@ -13,7 +13,7 @@
                         Vedno iščeva celoštevilo.
                     </li>
                     <li>
-                        Če vneseš prazno polje se to šteje kot en poskus.
+                        Če vneseš prazno polje ali nekaj kar ni celoštevilo se to šteje kot en poskus.
                     </li>
                     <li>
                         Dokler ne uganeš trenutnega iskanega števila bo igra tekla naprej.
@@ -21,18 +21,18 @@
                 </ol>
             </div>
         </p>
-    </h4>
+    </h3>
 </div>
 <hr>
 <div class="container is-fluid">
-    <h4 class="subtitle is-4">
+    <h3 class="subtitle is-3">
         <p>
             Ugibaš na intervalu od <b>{{spodnja_meja}}</b> do <b>{{zgornja_meja}}</b>.
         </p>
         <p>
             {{sporocilo}}
         </p>
-    </h4>
+    </h3>
 </div>
 
 <div class="container is-fluid">
