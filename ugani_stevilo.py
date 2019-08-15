@@ -10,8 +10,8 @@ class Ugani_stevilo:
         self.iskano_stevilo = None
         
     def ustvari_stevila(self):
-        a = random.randint(-100, 100)
-        b = random.randint(-100, 100)
+        a = random.randint(0, 1000)
+        b = random.randint(0, 1000)
         self.spodnja_meja = min(a, b)
         self.zgornja_meja = max(a, b)
         self.iskano_stevilo = random.randint(self.spodnja_meja, self.zgornja_meja)
