@@ -23,34 +23,36 @@
     <h3 class="title is-3">
         Uporabne povezave:
     </h3>
-    <h3 class="subtitle is-3">
-        <div class="columns">
-            <div class="column is-one-third">
-                <a
-                    href="https://github.com/urbanmerhar/99-iger">Github repositorij programa
-                </a>
+    <div class="container is-fluid">
+        <h3 class="subtitle is-3">
+            <div class="columns">
+                <div class="column is-one-third">
+                    <a
+                        href="https://github.com/urbanmerhar/99-iger">Github repositorij programa
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column is-one-third">
-                <a
-                    href="https://www.fmf.uni-lj.si/si/">Fakulteta za matematiko in fiziko
-                </a>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <a
+                        href="https://www.fmf.uni-lj.si/si/">Fakulteta za matematiko in fiziko
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column is-one-third">
-                <a
-                    href="https://textcraft.net/">Slike za naslove so bile narejene s pomočjo spletne strani textcraft
-                </a>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <a
+                        href="https://textcraft.net/">Slike za naslove so bile narejene s pomočjo spletne strani textcraft
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column is-one-third">
-                <a
-                    href="https://bulma.io/">Bulma
-                </a>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <a
+                        href="https://bulma.io/">Bulma
+                    </a>
+                </div>
             </div>
-        </div>
-    </h3>
+        </h3>
+    </div>
 </div>
