@@ -1,8 +1,14 @@
 % rebase('skupna_predloga.tpl')
 <!--NASLOV JE ZDAJ KAR TA SLIKA-->
-<img src="/static/slike/NAKLJUCNI-KVIZ.png"
-    style="width:693px;height:103px;"
- />
+<section class="hero is-small">
+    <div class="hero-body is-small">
+        <figure class="image">
+            <img src="/static/slike/NAKLJUCNI-KVIZ.png"
+                style="width:693px;height:103px;"
+             />
+        </figure>
+   </div>
+</section>
 <hr>
 <div class="container is-fluid">
     <h1 class="title is-1">
