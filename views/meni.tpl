@@ -12,32 +12,32 @@
 <hr>
 <div class="container is-fluid">
     <h1 class="title is-1">
-        Uživaj v igranju iger.
+        Uživaj v igranju iger!
     </h1>
 </div>
 <div class="container is-fluid">
-    <h1 class="subtitle is-1">Igre</h1>
-</div>
-<div class="container is-fluid">
-    <div class="columns">
-        <div class="column is-one-third">
-            <form action="/Igra_predstavitve/">
-                <input class="button is-info is-large" type="submit" value="Igra predstavitve">
-            </form>
+    <h1 class="subtitle is-1">Igre:</h1>
+    <div class="container is-fluid">
+        <div class="columns">
+            <div class="column is-one-third">
+                <form action="/Igra_predstavitve/">
+                    <input class="button is-info is-large" type="submit" value="Igra predstavitve">
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="columns">
-        <div class="column is-one-third">
-            <form action="/Ugani_stevilo/">
-                <input class="button is-info is-large" type="submit" value="Ugani število">    
-            </form>
+        <div class="columns">
+            <div class="column is-one-third">
+                <form action="/Ugani_stevilo/">
+                    <input class="button is-info is-large" type="submit" value="Ugani število">    
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="columns">
-        <div class="column is-one-third">
-            <form action="/Nakljucni_kviz/">
-                <input class="button is-info is-large" type="submit" value="Naključni kviz">
-            </form>
+        <div class="columns">
+            <div class="column is-one-third">
+                <form action="/Nakljucni_kviz/">
+                    <input class="button is-info is-large" type="submit" value="Naključni kviz">
+                </form>
+            </div>
         </div>
     </div>
 </div>
