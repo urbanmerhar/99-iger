@@ -5,19 +5,19 @@
  />
 <hr>
 <div class="container is-fluid">
-    <h4 class="subtitle is-4">
+    <h3 class="subtitle is-3">
         <p>
             Igra predstavitve je igra kjer te vprašam kdo si. Vse kar moraš narediti je to da zapišeš svoje ime in ga nato potrdiš.
         </p>
-    </h4>
+    </h3>
 </div>
 <hr>
 <div class="container is-fluid">
-        <h4 class="subtitle is-4">
-            <p>
-                <em>Kdo si?</em>
-            </p>
-        </h4>
+    <h3 class="subtitle is-3">
+        <p>
+            <em>Kdo si?</em>
+        </p>
+    </h3>
 </div>
 <div class="container is-fluid">
     <nav class="level">

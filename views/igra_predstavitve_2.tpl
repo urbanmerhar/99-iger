@@ -5,29 +5,29 @@
  />
 <hr>
 <div class="container is-fluid">
-    <h4 class="subtitle is-4">
+    <h3 class="subtitle is-3">
         <p>
             <em>Ali si res {{ime}}?</em>
         </p>
-    </h4>
+    </h3>
 </div>
 <div class="container is-fluid">
     <form action="/Igra_predstavitve_konec/" method="POST">
 
-        <h5 class="subtitle is-5">
+        <h3 class="subtitle is-3">
             <input type="radio" name="odgovor" value="Da">
             Da
-        </h5>
+        </h3>
 
-        <h5 class="subtitle is-5">
+        <h3 class="subtitle is-3">
             <input type="radio" name="odgovor" value="Ne">
             Ne
-        </h5>
+        </h3>
 
-        <h5 class="subtitle is-5">
+        <h3 class="subtitle is-3">
             <input type="radio" name="odgovor" value="Mogoče">
             Mogoče
-        </h5>
+        </h3>
 
         <div class="container is-fluid">
             <br>
