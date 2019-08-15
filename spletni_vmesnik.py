@@ -64,6 +64,10 @@ def ugani_stevilo():
     if trenutno_stevilo == '':
         igra.novo_ugibanje(trenutno_stevilo)
         return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
+    # ČE IGRALEC NE VPIŠE CELEGA ŠTEVILA
+    if trenutno_stevilo is not int:
+        sporocilo = 'Lahko bi vsaj prebral navodila igre...'
+        return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
     # NIŽJE
     elif int(trenutno_stevilo) > iskano_stevilo:
         sporocilo = 'Nižje.'
