@@ -23,12 +23,19 @@ def predstavi_se():
 @bottle.post('/Igra_predstavitve/')
 def predstavi_se_resnica():
     ime = bottle.request.forms.getunicode('ime_igralca')
+    znaki_ki_ne_sodijo_v_ime = '¨¸!"#$%&/()=?*<>~ˇ^˘°˛`´˝¨@{}[]¤×÷|\§'
     # Vsaj na par stvari smo lahko pozorni...
     if ime == '':
         napaka = 'Lažeš kradeš, bolhe ješ,...'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
+    elif any(znak.isdigit() for znak in ime):
+        napaka = 'Številke? Resno... Kdo jih pa ima v imenu? Kar nazaj na meni.'
+        return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
+    elif any((znak in znaki_ki_ne_sodijo_v_ime) for znak in ime):
+        napaka = 'Par znakov pa že preverim. Nazaj na meni.'
+        return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
     elif ime[0] not in 'ABCČDEFGHIJKLMNOPRSŠTUVZŽQWXYĆĐ':
-        napaka = 'Velika začetnica pa se spodobi. Tako slab pa nisem v slovnici.'
+        napaka = 'Velika začetnica pa se spodobi. Tako slab pa nisem v slovnici. Ne morem dopustiti, da zmagaš brez da bi upošteval vsaj osnovno slovnico.'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
     else:
         return bottle.template('igra_predstavitve_2.tpl', ime=ime)
@@ -40,7 +47,7 @@ def predstavi_se_zmaga():
     if resnica in ['Da', 'Ne', 'Mogoče']:
         return bottle.template('igra_predstavitve_3.tpl')
     else:
-        napaka = 'Razočaral si me, ker nisi izbral nobene možnosti.'
+        napaka = 'Razočaral si me, ker nisi izbral nobene možnosti. Tako močno sem razočaran da zdaj ne dobiš nobene nagrade.'
         return bottle.template('igra_predstavitve_napaka.tpl', napaka=napaka)
 
 #UGANI ŠTEVILO
@@ -70,6 +77,11 @@ def ugani_stevilo():
         sporocilo = 'Lahko bi vsaj prebral navodila igre...'
         igra.novo_ugibanje(trenutno_stevilo)
         return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
+    # IGRALEC NI NA INTERVALU
+    elif int(trenutno_stevilo) < spodnja_meja or int(trenutno_stevilo) > zgornja_meja:
+        sporocilo = 'Zašel si izven intervala.'
+        igra.novo_ugibanje(trenutno_stevilo)
+        return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
     # NIŽJE
     elif int(trenutno_stevilo) > iskano_stevilo:
         sporocilo = 'Nižje.'
@@ -85,10 +97,6 @@ def ugani_stevilo():
         igra.stikalo(False)
         igra.stevilo_ugibanj_postavi_na_nic()
         return bottle.template('uganil_si_pravo_stevilo.tpl', iskano_stevilo=iskano_stevilo, stevilo_ugibov=stevilo_ugibov)
-    # POMOJE JE TOLE NEPOTREBNO
-    #else:
-    #    igra.novo_ugibanje(trenutno_stevilo)
-    #    return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
 
 @bottle.get('/Uganil_si_pravo_stevilo/')
 def uganil_si_pravo_stevilo():

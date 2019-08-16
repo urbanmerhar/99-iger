@@ -35,12 +35,13 @@
         <p>
             Ugibaš na intervalu od <b>{{spodnja_meja}}</b> do <b>{{zgornja_meja}}</b>.
         </p>
-        <p>
-            {{sporocilo}}
-        </p>
     </h3>
 </div>
-
+<div class="container is-fluid">
+    <h3 class="subtitle is-3">
+        {{sporocilo}}
+    </h3>
+</div>
 <div class="container is-fluid">
     <nav class="level">
         <div class="level-left">
