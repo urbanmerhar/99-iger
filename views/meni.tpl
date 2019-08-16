@@ -4,7 +4,7 @@
     <div class="hero-body is-small">
         <figure class="image">
             <img src="/static/slike/99-IGER.png"
-                style="width:433px;height:129px;"
+                style="width:333px;height:99px;"
             />
         </figure>
     </div>
