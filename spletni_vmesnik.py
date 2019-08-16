@@ -23,7 +23,7 @@ def predstavi_se():
 @bottle.post('/Igra_predstavitve/')
 def predstavi_se_resnica():
     ime = bottle.request.forms.getunicode('ime_igralca')
-    znaki_ki_ne_sodijo_v_ime = '¨¸!"#$%&/()=?*<>~ˇ^˘°˛`´˝¨@{}[]¤×÷|\§'
+    znaki_ki_ne_sodijo_v_ime = '¨¸!"#$%&/()=?*<>~ˇ^˘°˛`´˝¨@\{}[]¤×÷|§'
     # Vsaj na par stvari smo lahko pozorni...
     if ime == '':
         napaka = 'Lažeš kradeš, bolhe ješ,...'
