@@ -14,9 +14,6 @@
     <h1 class="title is-1">
         Pravilno si odgovoril na {{pravilno}} od {{vse_mozne_tocke}} vprašanj.
     </h1>
-</div>
-
-<div class="container is-fluid">
     % if pravilno == 10:
         <h1 class="subtitle is-1">
             Ker si pravilno odgovoril na vsa dana vprašanja dobiš kar dve nagradi!
@@ -48,5 +45,6 @@
                 {{vrni_nagrado(seznam_sal)}}
             </h1>
         % end
+    % end
 </div>
 
