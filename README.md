@@ -10,6 +10,3 @@ V aplikaciji so tri igre:
 - *Igra predstavitve*
 - *Ugani število*
 - *Naključni kviz*
-
-
-TUKAJ MANJKA ŠE OPIS KAKO ZAGNATI PROGRAM!
