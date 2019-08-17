@@ -16,8 +16,8 @@ seznam_zanimivosti = [
     'Vžigalnik(1823) je bil izumljen pred vžigalico(1826).',
     'Leta 1899 je prvi avto dosegel hitrost 100km/h. Ta avto je bil električen.',
     '"Potrkati po lesu" izvira iz poganske kulture, namen dejanja pa je odganjati zle duhove, ki živijo v drevesih.',
-    'Prvi kralj Belgije je bil nemec, vojak ruske vojske, poročen z angleško princeso in je že zavrnil kronanje za kralja Grčije.',
-    'V starem Egiptu so uporabljali kolendarje z 12 meseci po 30 dni ter 5 dni za praznike. Skupno torej 365 dni tako kot danes.',
+    'Prvi kralj Belgije je bil Nemec, vojak ruske vojske, poročen z angleško princeso in je že zavrnil kronanje za kralja Grčije.',
+    'V starem Egiptu so uporabljali koledarje z 12 meseci po 30 dni ter 5 dni za praznike. Skupno torej 365 dni tako kot danes.',
     'Med drugo svetovno vojno se je nizozemska ladja HNLMS Abraham Crijnssen ob umiku iz Pacifika zakamuflirala kot tropski otok.',
 
 

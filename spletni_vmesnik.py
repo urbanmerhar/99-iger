@@ -94,6 +94,7 @@ def ugani_stevilo():
         return bottle.template('ugani_stevilo.tpl',  zgornja_meja=zgornja_meja, spodnja_meja=spodnja_meja, iskano_stevilo=iskano_stevilo, sporocilo=sporocilo)
     # ZMAGA
     elif int(trenutno_stevilo) == iskano_stevilo:
+        # stikalo resetira igro
         igra.stikalo(False)
         igra.stevilo_ugibanj_postavi_na_nic()
         return bottle.template('uganil_si_pravo_stevilo.tpl', iskano_stevilo=iskano_stevilo, stevilo_ugibov=stevilo_ugibov)

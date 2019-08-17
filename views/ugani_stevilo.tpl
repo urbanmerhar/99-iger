@@ -16,10 +16,10 @@
             <div class="content">
                 <ol type="1">
                     <li>
-                        Vedno iščeva celoštevilo.
+                        Vedno iščeva celo število.
                     </li>
                     <li>
-                        Če vneseš prazno polje ali nekaj kar ni celoštevilo se to šteje kot en poskus.
+                        Če vneseš prazno polje ali nekaj kar ni celo število se to šteje kot en poskus.
                     </li>
                     <li>
                         Dokler ne uganeš trenutnega iskanega števila bo igra tekla naprej.
