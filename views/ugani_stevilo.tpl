@@ -63,5 +63,4 @@
         </div>
     </nav>
 </div>
-Iščemo: {{iskano_stevilo}}
-Od {{spodnja_meja}}, do {{zgornja_meja}}
+<!-- ZA ČEKIRANJE: Iščemo: {{iskano_stevilo}} Od {{spodnja_meja}}, do {{zgornja_meja}}-->
