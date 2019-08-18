@@ -22,7 +22,7 @@
                 <em>Ugani število</em>, igra kjer na naključno izbranem intervalu iščeš skrivnostno število.
             </div>
             <div class="column">
-                <em>Naključni kviz</em>, ki pa je preprosto samo kviz.
+                <em>Naključni kviz</em>, ki je preprosto samo kviz.
             </div>
             V primeru zmage v katerikoli izmed iger dobiš <b>nagrado</b>.
         </p>
